@@ -33,7 +33,9 @@
     <header class="solutions">
       <div class="container header">
         <nav class="solutions-nav">
-          <a href="./index.html" class="solutions-logo-w">Web<span class="solutions-logo-w-s">Studio</span></a>
+          <a href="./index.html" class="solutions-logo-w"
+            >Web<span class="solutions-logo-w-s">Studio</span></a
+          >
           <ul class="solutions-menu-list">
             <li class="header-studio-list">
               <a href="./index.html" class="solutions-list header-studio"
@@ -68,7 +70,7 @@
           </svg>
         </button>
       </div>
-      <div class="header-modal is-open">
+      <div class="header-modal">
         <button type="button" class="header-modal-close">
           <svg class="header-modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-krest"></use>
@@ -77,9 +79,7 @@
         <nav class="modal-nav">
           <ul class="modal-menu-list">
             <li class="modal-studio-list">
-              <a href="./index.html" class="modal-list"
-                >Studio</a
-              >
+              <a href="./index.html" class="modal-list">Studio</a>
             </li>
             <li>
               <a href="" class="modal-list">Portfolio</a>
@@ -89,9 +89,21 @@
             </li>
           </ul>
         </nav>
-        <div class="header-modal-menu">
-
-        </div>
+        <address class="header-modal-cont">
+          <ul class="modal-mt-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="modal-cont-mt"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="modal-cont-mt"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="header-modal-menu"></div>
       </div>
     </header>
     <!--add 4 section-->
@@ -99,12 +111,12 @@
       <!--add site title and button-->
       <section class="effect">
         <div class="container hero">
-          <h1 class="effect-title">Effective Solutions<br> for Your Business</h1>
+          <h1 class="effect-title">Effective Solutions for Your Business</h1>
           <button type="button" class="effect-but">Order Service</button>
         </div>
       </section>
       <!-- company advantages -->
-      <!-- <section class="empty">
+      <section class="empty">
         <div class="container">
           <h2 class="empty-title visually-hidden">cannot be empty</h2>
           <ul class="empty-list">
@@ -158,15 +170,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--add Our Team-->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container section-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-li">
               <img
-                src="./images/img3.jpg"
+                srcset="./images/img-m-min.jpg 1x, ./images/img-m.jpg 2x"
+                src="./images/img-m-min.jpg"
                 alt="foto Mark Guerrero"
                 width="264"
                 height="260"
@@ -209,7 +222,8 @@
             </li>
             <li class="team-list-li">
               <img
-                src="./images/img2.jpg"
+                srcset="./images/img-t-min.jpg 1x, ./images/img-t.jpg 2x"
+                src="./images/img-t-min.jpg"
                 alt="foto Tom Ford"
                 width="264"
                 height="260"
@@ -252,7 +266,8 @@
             </li>
             <li class="team-list-li">
               <img
-                src="./images/img1.jpg"
+                srcset="./images/img-c-min.jpg 1x, ./images/img-c.jpg 2x"
+                src="./images/img-c-min.jpg"
                 alt="foto Camila Garcia"
                 width="264"
                 height="260"
@@ -295,7 +310,8 @@
             </li>
             <li class="team-list-li">
               <img
-                src="./images/img.jpg"
+                srcset="./images/img-d-min.jpg 1x, ./images/img-d.jpg 2x"
+                src="./images/img-d-min.jpg"
                 alt="foto Daniel Wilson"
                 width="264"
                 height="260"
@@ -338,19 +354,21 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- add Our Portfolio -->
-      <!-- <section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-li">
               <div class="portfolio-li-conteiner">
                 <img
-                  src="./images/img4.jpg"
+                  srcset="
+                    ./images/app-mob-1-min.jpg 1x,
+                    ./images/app-mob-2-min.jpg 2x
+                  "
+                  src="./images/app-mob-1-min.jpg"
                   alt="foto registration Banking App"
-                  width="360"
-                  height="300"
                   class="portfolio-img"
                 />
                 <p class="portfolio-li-content">
@@ -367,10 +385,12 @@
             <li class="portfolio-list-li">
               <div class="portfolio-li-conteiner">
                 <img
-                  src="./images/img5.jpg"
+                  srcset="
+                    ./images/marketing-mob-1-min.jpg 1x,
+                    ./images/marketing-mob-2-min.jpg 2x
+                  "
+                  src="./images/marketing-mob-1-min.jpg"
                   alt="foto of a mobile phone that reads the barcode"
-                  width="360"
-                  height="300"
                   class="portfolio-img"
                 />
                 <p class="portfolio-li-content">
@@ -387,10 +407,12 @@
             <li class="portfolio-list-li">
               <div class="portfolio-li-conteiner">
                 <img
-                  src="./images/img6.jpg"
+                  srcset="
+                    ./images/device-mob-1-min.jpg 1x,
+                    ./images/device-mob-2-min.jpg 2x
+                  "
+                  src="./images/device-mob-1-min.jpg"
                   alt="foto laptop and mobile phone"
-                  width="360"
-                  height="300"
                   class="portfolio-img"
                 />
                 <p class="portfolio-li-content">
@@ -407,10 +429,12 @@
             <li class="portfolio-list-li">
               <div class="portfolio-li-conteiner">
                 <img
-                  src="./images/img7.jpg"
+                  srcset="
+                    ./images/taxi-mob-1-min.jpg 1x,
+                    ./images/taxi-mob-2-min.jpg 2x
+                  "
+                  src="./images/taxi-mob-1-min.jpg"
                   alt="foto Taxi"
-                  width="360"
-                  height="300"
                   class="portfolio-img"
                 />
                 <p class="portfolio-li-content">
@@ -427,10 +451,12 @@
             <li class="portfolio-list-li">
               <div class="portfolio-li-conteiner">
                 <img
-                  src="./images/img8.jpg"
+                  srcset="
+                    ./images/design-mob-1-min.jpg 1x,
+                    ./images/design-mob-2-min.jpg 2x
+                  "
+                  src="./images/design-mob-1-min.jpg"
                   alt="mobile screensavers"
-                  width="360"
-                  height="300"
                   class="portfolio-img"
                 />
                 <p class="portfolio-li-content">
@@ -447,10 +473,12 @@
             <li class="portfolio-list-li">
               <div class="portfolio-li-conteiner">
                 <img
-                  src="./images/img9.jpg"
+                  srcset="
+                    ./images/woman-mob-1-min.jpg 1x,
+                    ./images/woman-mob-2-min.jpg 2x
+                  "
+                  src="./images/woman-mob-1-min.jpg"
                   alt="young girl is talking on a cell phone with headphones"
-                  width="360"
-                  height="300"
                   class="portfolio-img"
                 />
                 <p class="portfolio-li-content">
@@ -467,9 +495,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!--add footer-->
-    <!-- <footer class="foot">
+    <footer class="foot">
       <div class="container foot-container">
         <div class="foot-box-logo">
           <a href="./index.html" class="foot-logo"
@@ -534,7 +562,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!------------add modal------------->
     <div class="backdrop">
       <div class="modal">
