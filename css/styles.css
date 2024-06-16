@@ -175,10 +175,6 @@ img {
   margin-bottom: 50px;
 }
 
-.modal-studio-list {
-  
-}
-
 .modal-list {
   font-weight: bold;
   font-size: 36px;
@@ -191,8 +187,6 @@ img {
 .modal-list:focus {
   color: #404bbf;
 }
-
-.header-modal-cont {}
 
 .modal-mt-list {
   display: flex;
@@ -212,8 +206,6 @@ img {
 .modal-cont-mt:focus {
   color: #404bbf;
 }
-
-.modal-box-list {}
 
 .modal-list-icons {
   display: flex;
@@ -475,9 +467,6 @@ img {
   line-height: 1.2;
   color: #2e2f42;
   margin-bottom: 8px;
-}
-
-.portfolio-text {
 }
 
 .portfolio-li-text {
@@ -948,6 +937,10 @@ img {
 .empty-list-li {
   width: calc((100% - 24px) / 2);
 }
+
+.empty-list-title {
+  text-align: left;
+}
 /* ------------------- --------------------------- */
 /*-------------------- Team ------------------*/
 .team-list {
@@ -971,11 +964,11 @@ img {
 /* ------------------- --------------------------- */
   /* ------------ Footer -------------------- */
   .foot-container {
-    margin: 0;
+    /* margin: 0; */
     display: flex;
     gap: 72px 24px;
     align-items: baseline;
-    padding-left: 92px;
+    padding-left: 108px;
     flex-wrap: wrap;
   }
   
@@ -1019,7 +1012,7 @@ img {
   max-width: 1158px;
   padding:  0 15px;
 }
-  /* ------------ Footer -------------------- */
+  /* ------------ Header -------------------- */
 .solutions-logo-w {
   margin-right: 76px;
 }
@@ -1086,7 +1079,6 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: left;
 }
 
 .empty-p {
@@ -1108,6 +1100,10 @@ img {
 }
 /* ------------------- --------------------------- */
 /*-------------------- Portfolio ------------------*/
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-list {
   gap: 48px 24px;
 }
@@ -1126,7 +1122,7 @@ img {
     gap: 0;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     }
 
   .foot-box-logo {
